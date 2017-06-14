@@ -1,0 +1,156 @@
+.scheme {
+  padding-top: 60px;
+      margin-bottom: 24px;
+    .slick-dotted, .slick-slider{
+    margin-bottom: 57px;
+    }
+  &-slider {
+    margin-top: 248px;
+    .slick-initialized,
+    .slick-slide {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      outline: none;
+      background-color: #fff;
+      box-shadow: 0 5px 26px 0 rgba(0, 0, 0, .3);
+    }
+    .slick-dots {
+      left: 0;
+      top: -190px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      li {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        line-height: 45px;
+        background-color: #c2c2c2;
+        border-radius: 30px;
+        text-indent: 0px;
+        text-align: center;
+        position: relative;
+        margin: 0;
+        border: 6px solid #e6e6e6;
+        box-sizing: border-box;
+        text-align: center;
+        &:nth-child(1):after,
+        &:nth-child(2):after,
+        &:nth-child(3):after,
+        &:nth-child(4):after,
+        &:nth-child(5):after {
+          position: absolute;
+          bottom: -59px;
+          color: #010101;
+          max-width: 127px;
+          width: 127px;
+          margin-left: -65px;
+        }
+        &:nth-child(1):after {
+          content: "Просчет";
+        }
+        &:nth-child(2):after {
+          content: "Подтверждение";
+        }
+        &:nth-child(3):after {
+          content: "Оплата";
+        }
+        &:nth-child(4):after {
+          content: "Перевод";
+        }
+        &:nth-child(5):after {
+          content: "Передача";
+        }
+        button {
+          display: block;
+          width: 100%;
+          border: none;
+          background: transparent;
+          font-size: 24px;
+          font-weight: bold;
+          outline: none;
+          color: #ffffff;
+        }
+      }
+      .slick-active {
+        border: 6px solid $orange;
+        background: $orange;
+      }
+    }
+    .slick-prev {
+      width: 11px;
+      height: 17px;
+      bottom: 20px;
+      left: 50px;
+      top: auto;
+    }
+    .slick-next {
+      width: 11px;
+      height: 17px;
+      bottom: 20px;
+      left: 70px;
+      top: auto;
+    }
+    .slick-next:hover,
+    .slick-next:focus,
+    .slick-prev:hover,
+    .slick-prev:focus {
+      outline: none;
+      background: url(../img/arrow.png) center no-repeat;
+    }
+    .slick-active {
+      .item-text {
+        max-height: none;
+        overflow: visible;
+      }
+    }
+    &-item {
+      min-height: 304px;
+      .item-text {
+        width: 100%;
+        padding: 55px 62px 55px 97px;
+        box-sizing: border-box;
+        max-width: 716px;
+        max-height: 304px;
+        overflow: hidden;
+        .row {
+          overflow: hidden;
+          font-size: 22px;
+          margin-bottom: 22px;
+          color: $lightGray;
+          font-weight: bold;
+          letter-spacing: -0.030em;
+          .pagination {
+            float: right;
+            font-size: 16px;
+            .light {
+              color: #c7c7c7;
+            }
+          }
+        }
+        .description {
+          letter-spacing: -0.030em;
+          line-height: 22px;
+        }
+      }
+      .item-image {
+        width: 100%;
+        max-width: 425px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+  .see-more {
+    width: 225px;
+    height: 52px;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    background: #ff7600;
+  }
+}

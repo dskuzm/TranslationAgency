@@ -1,0 +1,138 @@
+@charset 'UTF-8';
+
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.slick-prev:hover,
+.slick-prev:focus{
+/*
+  outline: none;
+      opacity: 0.8;
+    width: 62px;
+    height: 62px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 5px solid rgba(0, 0, 0, 0.06);
+*/
+}
+.slick-next:hover,
+.slick-next:focus {
+
+/*
+  outline: none;
+      opacity: 0.8;
+    width: 62px;
+    height: 62px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 5px solid rgba(0, 0, 0, 0.06);
+*/
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .85;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*111*/
+
+.slick-prev {
+
+  z-index: 99999;
+  background: url(../img/arrow-light.png) center no-repeat;
+  transform: rotate(0deg);
+
+  z-index: 99999;
+}
+
+
+
+
+.slick-next {
+  background: url(../img/arrow-light.png) center no-repeat;
+  transform: rotate(-180deg);
+  z-index: 99999;
+}
+
+
+
+
+
+/* Dots */
+
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 15px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    border: 2px solid #fff;
+    height: 12px;
+    width: 12px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.slick-dots  li button{
+  display: none;
+}
+
+
+
+
+.slick-dots li.slick-active {
+  opacity: .75;
+/*  color: black;*/
+  background: #ffffff;
+}

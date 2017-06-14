@@ -1,0 +1,302 @@
+.contacts {
+  color: #ffffff;
+  padding-top: 70px;
+  padding-bottom: 85px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff6400+0,9229a3+100 */
+background: #ff6400; /* Old browsers */
+background: -moz-linear-gradient(left, #ff6400 0%, #9229a3 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #ff6400 0%,#9229a3 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #ff6400 0%,#9229a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6400', endColorstr='#9229a3',GradientType=1 ); /* IE6-9 */
+  .title {
+    color: #ffffff;
+    margin-bottom: 12px;
+  }
+  &-text {
+    margin-bottom: 57px;
+    .row {
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: -0.030em;
+      margin-bottom: 39px;
+      span {
+        font-weight: bold
+      }
+    }
+  }
+  &-items {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    letter-spacing: -0.010em;
+    .contact-item {
+      max-width: 350px;
+      position: relative;
+      p {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      a {
+        font-size: 16px;
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        transition: 0.3s;
+        line-height: 20px;
+        &:hover {
+          color: #000000;
+          transition: 0.3s;
+        }
+      }
+      i {
+        position: absolute;
+        left: -30px;
+      }
+    }
+  }
+  &-form {
+    max-width: 750px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 54px 96px;
+    box-sizing: border-box;
+    letter-spacing: -0.030em;
+    &-title {
+      margin-bottom: 35px;
+      h4 {
+        font-size: 24px;
+        font-weight: bold;
+        color: $orange;
+        text-align: center;
+        margin-bottom: 8px;
+      }
+      p {
+        color: #212121;
+        text-align: center;
+      }
+    }
+    form {
+      letter-spacing: -0.03px;
+      .contacts-input {
+        display: flex;
+        justify-content: space-between;
+        input {
+          max-width: 263px;
+        }
+      }
+    }
+    .contact-select {
+      display: flex;
+      justify-content: space-between;
+      border-top: 2px solid #e8e8e8;
+      margin-top: 32px;
+      padding-top: 32px;
+      .jcf-select {
+        max-width: 263px;
+      }
+    }
+    .file {
+      position: relative;
+          margin-bottom: 31px;
+      label {
+        width: 100%;
+        display: block;
+        height: 54px;
+        letter-spacing: -.03px;
+        color: #071c2c;
+        border: 2px dashed #a6a6a6;
+        text-align: center;
+        line-height: 51px;
+        background: #f0f0f0;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s ease;
+        box-sizing: border-box;
+        .material-icons{
+          margin-right: 0;
+        }
+        &:hover {
+          color: $orange;
+          transition: 0.4s ease;
+          background: $white;
+          border: 2px solid $orange;
+        }
+      }
+    }
+  }
+  //  form
+  form p input {
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    border: 2px solid #a6a6a6;
+    height: 54px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    color: #071c2c;
+    letter-spacing: -0.03px;
+    margin: 0 0 16px;
+  }
+  input[type="file"] {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    z-index: -1;
+    height: 0;
+    width: 0;
+  }
+  form input[type="submit"] {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 50px;
+    display: block;
+    width: 163px;
+    height: 52px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f90242+1,99299f+100 */
+background: #f90242; /* Old browsers */
+background: -moz-linear-gradient(left, #f90242 1%, #99299f 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #f90242 1%,#99299f 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #f90242 1%,#99299f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f90242', endColorstr='#99299f',GradientType=1 ); /* IE6-9 */
+
+    transition: 0.3s ease;
+  }
+  form input[type="submit"]:hover {
+
+    opacity: 0.7;
+    transition: 0.3s ease;
+  }
+  form p input:focus {
+    outline: none;
+    border: 2px solid $orange;
+  }
+  .jcf-select {
+    display: block;
+    border: 2px solid #a6a6a6;
+    height: 54px;
+    color: #babfc6;
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    line-height: 51px;
+  }
+  .jcf-select .select {
+    font-size: 16px;
+    color: #babfc6;
+    line-height: 2px;
+    border: 2px solid #a6a6a6;
+    border-top: none;
+    left: 0;
+  }
+  .jcf-select .jcf-select-text {
+    line-height: 35px;
+    padding-left: 20px;
+  }
+  .jcf-select .jcf-select-opener {
+    position: absolute;
+    text-align: center;
+    background: url(../img/arrow-light.png) no-repeat center;
+    width: 28px;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    transition: all 0.4s ease;
+    transform: rotate(-90deg);
+  }
+  .jcf-drop-active .jcf-select-opener {
+    transform: rotate(90deg);
+    transition: all 0.4s ease;
+  }
+  .jcf-select-drop {
+    left: 0;
+    border: 2px solid #a6a6a6;
+    border-top: none;
+    border-top: none;
+    transition: all 0.3s ease;
+    position: absolute;
+    margin-top: 0px;
+    top: 100%;
+    left: -2px;
+    right: -1px;
+    background: #fff;
+    border-top: 1px solid #a6a6a6;
+    max-width: 100%;
+    z-index: 999;
+  }
+  .jcf-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .jcf-list ul li {
+    overflow: hidden;
+    display: block;
+  }
+  .jcf-list .jcf-option {
+    height: 35px;
+    line-height: 35px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: default;
+    display: block;
+    padding-left: 20px;
+    color: #656565;
+    min-height: 14px;
+    height: 1%;
+  }
+  .jcf-list .jcf-disabled {
+    background: #fff;
+    color: #aaa;
+  }
+  .jcf-select-drop .jcf-hover,
+  .jcf-list-box .jcf-selected {
+    background: #e6e6e6;
+  }
+  .jcf-focus,
+  .jcf-focus * {
+    border-color: $orange !important;
+  }
+  textarea {
+    font-size: 16px;
+    width: 100%;
+    min-height: 108px;
+    resize: none;
+    box-sizing: border-box;
+    border: 2px solid #a6a6a6;
+    outline: none;
+    padding: 13px 0 0 20px;
+    margin-bottom: 10px;
+  }
+  textarea:focus {
+    border: 2px solid $orange;
+  }
+  ::-webkit-input-placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  }
+  ::-moz-placeholder {
+    font-family: 'Open Sans', sans-serif;
+    ont-size: 16px;
+  }
+  /* Firefox 19+ */
+  :-moz-placeholder {
+    font-family: 'Open Sans', sans-serif;
+    ont-size: 16px;
+  }
+  /* Firefox 18- */
+  :-ms-input-placeholder {
+    font-family: 'Open Sans', sans-serif;
+    ont-size: 16px;
+  }
+  //  form
+}

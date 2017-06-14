@@ -1,0 +1,152 @@
+html {
+  font-family: $font-default;
+  line-height: 1.15;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+small {
+  font-size: 80%;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $font-default;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button {
+  cursor: pointer;
+  background: $white;
+}
+
+body {
+  font-family: $font-default;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+//  color: $textPrimary;
+  background-color: $white;
+}
+
+p {
+    margin: 0;
+//  margin-bottom: 1rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+//  margin-bottom: 1rem;
+}
+
+ol,ul {
+  margin-bottom: 0;
+}
+
+img {
+//  vertical-align: middle;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+input,
+button,
+select,
+textarea {
+  line-height: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 4.000em;
+}
+
+h2 {
+  font-size: 3.714em;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+//  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}

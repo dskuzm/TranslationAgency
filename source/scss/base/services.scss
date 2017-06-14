@@ -1,0 +1,95 @@
+.services {
+  padding-top: 70px;
+  padding-bottom: 94px;
+  border-top: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  background: #ffffff;
+  a {
+    color: $orange;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .title {
+    margin-bottom: 28px;
+  }
+  &-tabs{
+      margin-bottom: 12px;
+  .tab-desription {
+    max-width: 945px;
+    margin: 0 auto;
+    letter-spacing: -0.030em;
+    line-height: 22px;
+    margin-bottom: 58px;
+  }
+  ul {
+    padding: 0;
+    margin: 0 0 46px 0;
+    text-align: center;
+    li {
+      display: inline-block;
+      float: none;
+      margin-right: 14px;
+      a {
+        font-size: 18px;
+        letter-spacing: -0.030em;
+        color: #a6a6a6;
+        transition: all 0.2s;
+        outline: none;
+      }
+    }
+  }
+  .tab-items {
+    max-width: 975px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    .tab-item {
+      width: 100%;
+      color: $darkGray;
+      margin: 0px 15px 56px 15px;
+      max-width: 165px;
+      text-align: center;
+      transition: 0.2s ease-in;
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 84px;
+        height: 84px;
+        margin: 0 auto 27px;
+        font-size: 36px;
+        background-color: #ebebeb;
+        border: 6px solid transparent;
+        border-radius: 50px;
+      }
+      &:hover {
+        color: $orange;
+        transition: 0.2s ease-in;
+        .icon {
+          background-color: #ffffff;
+          border: 6px solid #ebebeb;
+        }
+      }
+    }
+  }
+  .ui-tabs-active {
+//    border-bottom: 2px solid #ff5b00;
+    a {
+      color: $orange;
+
+    border-bottom: 2px solid #ff5b00;
+    }
+  }
+}
+
+&-row {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: -0.030em;
+}
+
+
+}

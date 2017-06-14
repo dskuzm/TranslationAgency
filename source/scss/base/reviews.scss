@@ -1,0 +1,125 @@
+.reviews {
+  padding-top: 60px;
+  margin-bottom: 132px;
+  .title {
+    margin-bottom: 48px;
+  }
+  &-slider {
+    margin-bottom: 57px;
+    .slick-initialized,
+    .slick-slide {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      outline: none;
+      background-color: #fff;
+      box-shadow: 0 5px 26px 0 rgba(0, 0, 0, .3);
+    }
+    .slick-prev {
+      width: 11px;
+      height: 17px;
+      bottom: 20px;
+      left: 50px;
+      top: auto;
+    }
+    .slick-next {
+      width: 11px;
+      height: 17px;
+      bottom: 20px;
+      left: 70px;
+      top: auto;
+    }
+    .slick-next:hover,
+    .slick-next:focus,
+    .slick-prev:hover,
+    .slick-prev:focus {
+      outline: none;
+      background: url(../img/arrow.png) center no-repeat;
+    }
+    .slick-active {
+      .item-text {
+        max-height: none;
+        overflow: visible;
+      }
+    }
+    &-item {
+      min-height: 400px;
+      .item-text {
+        width: 100%;
+        padding: 55px 40px 55px 97px;
+        box-sizing: border-box;
+        max-width: 790px;
+        max-height: 304px;
+        overflow: hidden;
+        .row {
+          overflow: hidden;
+          font-size: 18px;
+          margin-bottom: 6px;
+          color: $lightGray;
+          font-weight: bold;
+          letter-spacing: -0.030em;
+          .light {
+            color: #c7c7c7;
+            font-weight: 100;
+            font-size: 16px;
+          }
+          .pagination {
+            float: right;
+            font-size: 16px;
+          }
+        }
+        .description {
+          letter-spacing: -0.030em;
+          line-height: 22px;
+          a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #ff5b00;
+          }
+        }
+        .rating {
+          padding: 0;
+          margin: 0;
+          margin-bottom: 10px;
+          li {
+            display: inline-block;
+            font-size: 20px;
+            color: $orange;
+          }
+        }
+      }
+      .item-image {
+        width: 100%;
+        max-width: 349px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
+    }
+    .slick-dots {
+      left: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      bottom: -40px;
+      li {
+        position: relative;
+        width: 12px;
+        height: 12px;
+        line-height: 45px;
+        background-color: $orange;
+        border-radius: 30px;
+        text-indent: 0px;
+        text-align: center;
+        position: relative;
+        margin: 0 6px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .slick-active {
+        border: 2px solid $orange;
+        background: $orange;
+      }
+    }
+  }
+}
